@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+.container {
+    width: 80%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header{
+    background: url(../image/BG-h.png) ;
+    background-color: #f6f9fd;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+ }
+
+.nav a {
+    text-decoration: none;
+    color: #6B8CAE;
+    margin-left: 25px;
+    list-style: none;
+    width: 100%;
+ }
+
+.nav li > ul {
+    display: none;
+}
+
+.nav li:hover > ul {
+    display: block;
+    position: absolute;
+    width: 100px;
+    background-color: #eceff3;
+}
+
+ nav a:hover {
+    background-color: #46a6ff65;
+ }
+
+.nav_toggle {
+    display: none;
+    border: 0;
+    background: none;
+    color: #6B8CAE;
+    font-size: 12px;
+}
+
+.nav_toggle::before {
+    content: 'menu';
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-content .computer {
+    width: 100%;
+}
+
+.header-content .h-text h1 {
+    color: #677897;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 65px;
+    margin-top: 45px;
+}
+
+.header-content .h-text .bold {
+    font-weight: bold;
+}
+
+.header-content .button-bg {
+    background: linear-gradient(44.91deg, #102397 -5.12%, #187ADF 48.89%, #00EAF8 92.6%);
+    border-radius: 100px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    width: 131px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.header-social-g {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-social img {
+    width: 60%;
+}
+
+.header-social .h-botton-text {
+    font-family: Montserrat;
+    font-size: 8px;
+    line-height: 24px;
+    text-align: center;
+    color: #91B7DC;
+}
+
+.widget {
+    background-color: #f6f9fd;
+    padding-top: 80px;
+}
+
+.widget-g {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+.widget-g :first-child {
+    align-items: center;
+}
+
+.widget-text {
+    padding-top: 70px;
+}
+
+.widget-text > h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 44px;
+    color: #677897;
+}
+
+.widget-text > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #677897;
+    padding-top: 35px;
+}
+
+.widget-img img {
+    width: 100%;
+}
+
+.display {
+    background-color: #f6f9fd;
+    
+}
+
+.display-g {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.display-g:last-child {
+    align-items: center;
+}
+
+.display-img img {
+    width: 80%;
+}
+
+.display-text h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 43px;
+    line-height: 44px;
+    color: #677897;
+}
+
+.display-text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #677897;
+    padding-top: 35px;
+}
+
+.version {
+    background-color: #f6f9fd;
+}
+
+.version-g {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.version-g :last-child {
+    align-items: end;
+}
+
+.version-g .v-img-1 {
+    width: 70%;
+    position: relative;
+    z-index: 2;
+    top: 40%;
+}
+
+.version-g .v-img-2 {
+    width: 55%;
+    position: relative;
+    left: 35%;
+    z-index: 1;
+}
+
+.version-g .v-img-3 {
+    width: 70%;
+    position: relative;
+    bottom: 17%;
+    left: 15%;
+}
+
+.version-text h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #677897;
+}
+
+.version-text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #677897;
+    padding-top: 35px;
+}
+
+.video {
+    background-color: #f6f9fd;
+    padding: 80px 0;
+}
+
+.video-g {
+    display: grid;
+}
+
+.video-img-1 {
+    position: relative;
+    left: 10%;
+    width: 50%;
+}
+
+.video-img-2 {
+    position: relative;
+    bottom: 6%;
+    width: 20%;
+    right: 5%;
+}
+
+.video-img-3 {
+    width: 25%;
+    position: relative;
+    bottom: 20%;
+    right: 10%;
+}
+
+.video-text h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #677897;
+}
+
+.video-text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #677897;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.video-g .button-bg {
+    background: linear-gradient(44.91deg, #102397 -5.12%, #187ADF 48.89%, #00EAF8 92.6%);
+    border-radius: 100px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    width: 131px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.stat {
+    background-color: #f6f9fd;  
+    padding: 80px 0;
+}
+
+.stat-text h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #677897;
+}
+
+.stat-text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #677897;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.stat-g {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stat-img .s-img {
+    width: 100%;
+}
+
+.button-s-bg {
+    border-radius: 100px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    width: 131px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    border: solid 1px  #187ADF;
+    color: #0663A3;
+    background-color: white;
+}
+
+.text-a {
+    text-align: center;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.d-grid .d-text h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #677897;
+}
+
+.Download {
+    padding: 50px 0;
+    background-color: #f6f9fd; 
+}
+
+.d-grid .button-bg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.button-d-bg {
+    background: linear-gradient(44.91deg, #102397 -5.12%, #187ADF 48.89%, #00EAF8 92.6%);
+    border-radius: 100px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    width: 131px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: #f6f9fd; 
+}
+
+.footer p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #677897;
+}
+
+.f-g {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-column-gap: 20px;
+}
+
+.footer .arrow {
+    margin-left: 3px;
+}
+
+.f-social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-social :last-child {
+    align-items: flex-end;
+    display: flex;
+}
+
+.f-content {
+    text-align: end;
+}
+
+.f-icon {
+    margin-left: 50px;   
+}
+
+.f-icon .icon-1, .icon-2, .icon-3, .icon-4, .icon-5 {
+    margin-left: 15px;
+}
+
+.footer-bottom {
+    background-color: #E6EFFA;
+    padding: 20px 0;
+}
+
+.fb-g {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb-g p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #2A4560;
+}
+
